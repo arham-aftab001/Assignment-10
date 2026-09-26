@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login & Sign up</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+        integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-top: 70px;
+
+
+
+        }
+
+        .login {
+            height: 480px;
+            border-radius: 14px 0px 0px 14px;
+            width: 400px;
+            background: linear-gradient(135deg, #FD6C3F, #FE8E28);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .signup {
+            border-radius: 0px 14px 14px 0px;
+            height: 480px;
+            width: 400px;
+            box-shadow: 0px 0px 1px black;
+        }
+
+        #sec {
+            text-align: center;
+            margin-top: 25px;
+        }
+
+        .icons {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 21px;
+            gap: 35px;
+            font-size: 20px;
+        }
+
+        .lines {
+            margin-top: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .icons i {
+            border: 1px solid;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 28px;
+            width: 30px;
+            transition: all 0.3s ease;
+        }
+
+        .icons i:hover {
+            background-color: #FE8E28;
+            color: white;
+            transform: scale(1.1);
+
+        }
+
+        hr {
+            width: 150px;
+        }
+
+        .form form {
+            padding: 25px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .form form>input {
+            width: 330px;
+            padding: 10px;
+        }
+
+        .terms {
+            display: flex;
+            gap: 3px;
+            margin-bottom: 21px;
+            margin-right: 212px;
+        }
+
+        #registeration {
+            width: 320px;
+            border-radius: 2px;
+            padding: 9px;
+            background-color: #FF4C2D;
+            border: none;
+            transition: all 0.3s ease;
+
+        }
+
+        #registeration>a {
+            color: white;
+            font-weight: bold;
+            text-decoration: none;
+            display: block;
+        }
+
+        .bdy {
+            display: flex;
+            flex-direction: column;
+            width: 340px;
+        }
+
+        .bdy>i {
+            font-size: 25px;
+            color: white;
+            font-weight: bold;
+            margin: 0px auto;
+        }
+
+        .bdy>h1 {
+
+            color: white;
+            font-weight: bold;
+            margin: 4px auto;
+        }
+
+        .bdy>p {
+            color: white;
+            margin: 35px 30px 30px 30px;
+            text-align: center;
+        }
+
+        .bdy>button {
+            width: 150px;
+            margin: 0px auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 5px;
+            border-radius: 999px;
+            padding: 10px;
+            border: 1.5px solid white;
+            background: transparent;
+            color: white;
+            transition: all 0.3s ease;
+        }
+
+        #check {
+            cursor: pointer;
+        }
+
+        .bdy>button:hover {
+            background-color: white;
+            color: #FD6C3F;
+            transform: scale(1.1);
+        }
+
+        #registeration:hover {
+            transform: scale(1.1);
+            box-shadow: 0px 0px 5px black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!-- here is .login page area -->
+        <div class="login">
+            <div class="bdy">
+                <i class="fa-solid fa-arrow-right-to-bracket"></i>
+                <h1 id="hed">Welcome Back!</h1>
+                <p>To keep connected with us please login with your personal info.</p>
+                <button>
+                    <i class="fa-solid fa-arrow-left"></i>
+                    LOG IN
+                </button>
+            </div>
+        </div>
+        <!-- Now here is sign up are -->
+        <div class="signup">
+            <h1 id="sec">Sign up</h1>
+            <div class="icons">
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-github"></i>
+                <i class="fa-brands fa-linkedin-in"></i>
+            </div>
+
+            <div class="lines">
+                <hr><span>OR</span>
+                <hr>
+            </div>
+            <!-- Form area -->
+            <div class="form">
+                <form>
+                    <input type="text" name="name" placeholder="name"><br>
+                    <input type="email" placeholder="email"><br>
+                    <input type="password" placeholder="password"><br>
+
+                    <div class="terms">
+
+                        <input type="checkbox" name="yes" id="check"><br>
+                        <label for="check">I accept terms</label>
+                    </div>
+                    <button id="registeration"> <a href="/main.html">REGISTER</a></button>
+                </form>
+
+
+            </div>
+
+        </div>
+    </div>
+
+    </form>
+</body>
+
+</html>
